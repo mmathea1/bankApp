@@ -23,9 +23,9 @@ from bankApp import views
 router = routers.DefaultRouter()
 router.register(r'bankApp', views.BankAppView, 'bankApp')
 router.register(r'credentials', views.CredentialsView, 'credentials')
-router.register(r'bankApp', views.PersonView, 'person')
-router.register(r'bankApp', views.TransactionTypeRefView, 'transactionType')
-router.register(r'bankApp', views.TransactionAccessRefView, 'transactionAccess')
+router.register(r'person', views.PersonView, 'person')
+router.register(r'transactionType', views.TransactionTypeRefView, 'transactionType')
+router.register(r'transactionAccess', views.TransactionAccessRefView, 'transactionAccess')
 
 
 urlpatterns = [
